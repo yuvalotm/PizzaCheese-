@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "309477772903",
+    "firebase_url": "https://pizzacheeseserver-ashdod.firebaseio.com",
+    "project_id": "pizzacheeseserver-ashdod",
+    "storage_bucket": "pizzacheeseserver-ashdod.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:309477772903:android:2cb43886523e9a0a",
+        "android_client_info": {
+          "package_name": "com.pizzacheeseashdod"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "309477772903-m9m19fhi0l14ep50sendo7r4tv2bh20r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyANJXJHBj0VuisU4HjgXUNNnXsG0BL6hFs"
+        },
+        {
+          "current_key": "AIzaSyAorNS-PoXRhe1G7zUL8Y3M5MYuSN-GoEs"
+        },
+        {
+          "current_key": "AIzaSyCZmEr-kFdmEcRwPnEQmOsKucNfJ2jdsL8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
