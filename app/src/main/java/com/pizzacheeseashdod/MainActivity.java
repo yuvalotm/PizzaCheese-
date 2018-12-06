@@ -449,8 +449,8 @@ public class MainActivity extends AppCompatActivity {
 
     //sends the mail from pizzaCheeseBackupServer@outlook.co.il to the email chosen in the manager app
     public boolean sendBackupMail(String order) {
-        final String senderMail = "pizzaCheeseBackupServer@outlook.co.il";
-        final String senderPassword = "Leno3129";
+        final String senderMail = getResources().getString(R.string.senderBackupMail);
+        final String senderPassword = getResources().getString(R.string.senderBackupPassword);
 
         final String receiver = SplashActivity.myAppSettings.getReceiverMail();
         final String subject = "הזמנה חדשה";

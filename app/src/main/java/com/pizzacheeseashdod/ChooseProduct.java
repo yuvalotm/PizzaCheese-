@@ -9,6 +9,7 @@ import android.graphics.drawable.ColorDrawable;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.transition.Explode;
 import android.util.TypedValue;
 import android.view.*;
 import android.widget.*;
@@ -80,11 +81,9 @@ public class ChooseProduct extends AppCompatActivity implements View.OnClickList
         super.onCreate(savedInstanceState);
         productAdded = false;
 
-
         //hide action bar
         this.getSupportActionBar().hide(); // hide the action bar this.getSupportActionBar().hide(); // hide the action ba
         //finish
-
 
 
 
@@ -97,6 +96,7 @@ public class ChooseProduct extends AppCompatActivity implements View.OnClickList
         mainLayout = new RelativeLayout(this);
         mainLayout.setId(View.generateViewId());
         mainLayout.setBackgroundColor(Color.parseColor("#e4e5e6"));
+
         mainLayoutParams = new RelativeLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT);
 
 
@@ -117,7 +117,6 @@ public class ChooseProduct extends AppCompatActivity implements View.OnClickList
         Bundle bundle = intent.getExtras();
 
         textTitle = bundle.getString("titleName");
-        currentImageDrawable = bundle.getInt("image");
 
         face = Typeface.createFromAsset(getAssets(), "fonts/VarelaRound-Regular.ttf");
 
@@ -225,10 +224,6 @@ public class ChooseProduct extends AppCompatActivity implements View.OnClickList
         scrollViewParams.addRule(RelativeLayout.CENTER_HORIZONTAL);
         scrollViewParams.addRule(RelativeLayout.BELOW, actionBarLayout.getId());
 
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-            scrollView.setTransitionName("card");
-            actionBarLayout.setTransitionName("line");
-        }
         //finish
 
         scrollView.addView(cardListLayout, cardListLayoutParams);

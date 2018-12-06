@@ -1,15 +1,4 @@
 <resources>
-    <string name="app_name">Pizza Cheese</string>
-
-    <string name="appInactive">האפליקציה לא פעילה כעת, נסה שוב מאוחר יותר</string>
-    <string name="plsUpdate">עדכן את גרסאת האפליקציה</string>
-
-    <string name="senderMail">pizzacheeseserver@gmail.com</string>
-    <string name="senderPassword">cheesetal</string>
-
-    <string name="senderBackupMail">pizzacheeseprinter@gmail.com</string>
-    <string name="senderBackupPassword">cheesetal</string>
-
     <string name="fui_phone_hint" translation_description="Hint for phone input field">מספר טלפון</string>
     <string name="fui_verify_phone_number_title" translation_description="Phone number entry form title">הכנס מספר טלפון</string>
     <string name="fui_invalid_phone_number" translation_description="Inline error when phone number entered is invalid">אנא הכנס מספר טלפון תקין</string>
@@ -128,5 +117,15 @@
     <string name="adress">כתובת: אדר 4, שכונת יב</string>
     <string name="PhoneNumber">08-677-6090</string>
     <string name="takingInfo">האיסוף והתשלום יתבצעו בסניף אשדוד</string>
+    <string name="app_name">Pizza Cheese</string>
+
+    <string name="appInactive">האפליקציה לא פעילה כעת, נסה שוב מאוחר יותר</string>
+    <string name="plsUpdate">עדכן את גרסאת האפליקציה</string>
+
+    <string name="senderMail">pizzacheeseashdodserver@gmail.com</string>
+    <string name="senderPassword">cheesetal</string>
+
+    <string name="senderBackupMail">pizzacheeseashdodbackupserver@outlook.co.il</string>
+    <string name="senderBackupPassword">Cheesetal3129</string>
 
 </resources>

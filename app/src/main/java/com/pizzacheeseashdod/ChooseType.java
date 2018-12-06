@@ -1,23 +1,31 @@
 package com.pizzacheeseashdod;
 
+import android.animation.ObjectAnimator;
+import android.animation.StateListAnimator;
 import android.content.Context;
 import android.content.Intent;
 import android.content.res.ColorStateList;
 import android.graphics.Color;
 import android.graphics.Typeface;
 import android.graphics.drawable.ColorDrawable;
+import android.os.Build;
+import android.support.design.widget.AppBarLayout;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.Toolbar;
 import android.util.TypedValue;
 import android.view.Display;
 import android.view.Gravity;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
+
+
 
 import com.pizzacheeseashdod.cardListsAdapters.ChooseOrderAdapter;
 import com.lb.auto_fit_textview.AutoResizeTextView;
@@ -108,6 +116,9 @@ public class ChooseType extends AppCompatActivity implements View.OnClickListene
         text_width = width/2;
     }
 
+
+
+
     public void buildActionBar() {
         //set the action bar
         actionBarLayout = new RelativeLayout(this);
@@ -168,6 +179,7 @@ public class ChooseType extends AppCompatActivity implements View.OnClickListene
         actionBarLayout.addView(ivBackActionBarBtton, ivBackActionBarBttonParams);
         mainLayout.addView(actionBarLayout, actionBarLayoutParams);
     }
+
 
     public void buildCardView() {
         //set card view

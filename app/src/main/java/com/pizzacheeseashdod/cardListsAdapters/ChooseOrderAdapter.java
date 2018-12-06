@@ -1,9 +1,17 @@
 package com.pizzacheeseashdod.cardListsAdapters;
 
+import android.app.Activity;
+import android.app.ActivityOptions;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.Typeface;
+import android.os.Build;
+import android.os.Bundle;
+import android.support.v4.app.ActivityCompat;
+import android.support.v4.app.ActivityOptionsCompat;
 import android.support.v7.widget.RecyclerView;
+import android.transition.Explode;
+import android.transition.Transition;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -30,7 +38,7 @@ public class ChooseOrderAdapter extends RecyclerView.Adapter<ChooseOrderAdapter.
     private ChooseOrderAdapter.ViewHolder[] viewHolders;
 
     @Override
-    public void onBindViewHolder(final ChooseOrderAdapter.ViewHolder viewHolder, final int i) {
+    public void onBindViewHolder(final ViewHolder viewHolder, final int i) {
 
 
         viewHolder.imageView.setImageBitmap(SplashActivity.decodeSampledBitmapFromResource(viewHolder.itemView.getResources(), imageId[i], 105, 105));
@@ -46,15 +54,18 @@ public class ChooseOrderAdapter extends RecyclerView.Adapter<ChooseOrderAdapter.
 
         viewHolder.mainLayout.removeView(viewHolder.titleText);
 
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            viewHolder.mainLayout.setTransitionName("bg");
+        }
+
         viewHolders[i] = viewHolder;
 
 
         viewHolder.itemView.setOnClickListener(v -> {
             Intent intent = new Intent(v.getContext(), ChooseProduct.class);
             intent.putExtra("titleName", titleName[i]);
-            intent.putExtra("image", imageId[i]);
-
             v.getContext().startActivity(intent);
+
         });
 
 
@@ -71,9 +82,9 @@ public class ChooseOrderAdapter extends RecyclerView.Adapter<ChooseOrderAdapter.
     }
 
     @Override
-    public ChooseOrderAdapter.ViewHolder onCreateViewHolder(ViewGroup viewGroup, int i) {
+    public ViewHolder onCreateViewHolder(ViewGroup viewGroup, int i) {
         View v = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.listview_choose_order, viewGroup, false);
-        ChooseOrderAdapter.ViewHolder viewHolder = new ChooseOrderAdapter.ViewHolder(v);
+        ViewHolder viewHolder = new ViewHolder(v);
         return viewHolder;
     }
 
