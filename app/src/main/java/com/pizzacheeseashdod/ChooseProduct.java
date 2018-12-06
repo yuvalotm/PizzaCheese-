@@ -79,9 +79,14 @@ public class ChooseProduct extends AppCompatActivity implements View.OnClickList
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         productAdded = false;
+
+
         //hide action bar
         this.getSupportActionBar().hide(); // hide the action bar this.getSupportActionBar().hide(); // hide the action ba
         //finish
+
+
+
 
         //get screen size
         final Display display = this.getWindowManager().getDefaultDisplay();
@@ -153,6 +158,8 @@ public class ChooseProduct extends AppCompatActivity implements View.OnClickList
         actionBarLayout = new RelativeLayout(this);
         actionBarLayout.setId(View.generateViewId());
         actionBarLayout.setBackgroundResource(R.drawable.choose_order_background);
+
+
 
         actionBarLayoutParams = new RelativeLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, actionbar_height);
         actionBarLayoutParams.addRule(RelativeLayout.ALIGN_PARENT_TOP);

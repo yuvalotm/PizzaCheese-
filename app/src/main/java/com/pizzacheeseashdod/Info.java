@@ -12,6 +12,8 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
+
 import com.github.jivimberg.library.AutoResizeTextView;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -60,14 +62,15 @@ public class Info extends AppCompatActivity implements OnMapReadyCallback {
         tvPhone = findViewById(R.id.tvPhone);
         tvPhone.setOnClickListener(view -> {
             Intent intent = new Intent(Intent.ACTION_DIAL);
-            intent.setData(Uri.parse("tel:08-971-8176"));
+            String phoneNumber = "tel:" + getResources().getString(R.string.PhoneNumber);
+            intent.setData(Uri.parse(phoneNumber));
             view.getContext().startActivity(intent);
         });
     }
 
     @Override
     public void onMapReady(GoogleMap googleMap) {
-        LatLng sydney = new LatLng(31.900005, 35.013709);
+        LatLng sydney = new LatLng(31.780919, 34.638672);
         googleMap.addMarker(new MarkerOptions().position(sydney)
                 .title("פיצה צ'יז"));
         googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(sydney, 18));

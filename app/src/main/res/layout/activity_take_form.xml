@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="10dp"
-    tools:context="com.cheeze.pizza.pizzacheeze.TakeForm">
+    tools:context=".TakeForm">
 
 
     <RelativeLayout
@@ -216,7 +216,7 @@
             android:layout_alignParentStart="true"
             android:layout_alignParentRight="true"
             android:layout_gravity="bottom"
-            android:text="האיסוף והתשלום יתבצעו בסניף מרלז, מודיעין" />
+            android:text="@string/takingInfo" />
     </RelativeLayout>
 
 

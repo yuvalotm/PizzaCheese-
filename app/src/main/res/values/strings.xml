@@ -34,7 +34,7 @@
     <string name="fui_sms_terms_of_service" translation_description="Fine print warning displayed below Verify Phone Number button">בליחצה על "אמת את הטלפון" ישלח SMS. ייתכנו חייובים נוספים.</string>
     <string name="defaultReciverMail">pizzaCheeseServer@gmail.com</string>
     <string name="title_activity_info">מידע</string>
-    <string name="info">כתובת: מרכז מרלז, רחוב עמק דותן 66 טלפון: 08-971-1355</string>
+    <string name="info"> כתובת: אדר 4, שכונת יב. טלפון: 08-677-6090 </string>
     <string name="copyrights">© Tal Levy and Yuval Otmazgin</string>
 
     <string name="terms">
@@ -125,5 +125,8 @@
 
 • אם פיצה צ\'יז תארגן את פעילות היישומון במסגרת תאגיד אחר – וכן במקרה שתתמזג עם גוף אחר או תמזג את פעילות היישומון עם פעילותו של צד שלישי – היא תהיה זכאית להעביר לתאגיד החדש העתק מן המידע שנאגר אודותיך ביישומון או כל מידע סטטיסטי שבידיה, ובלבד שתאגיד זה יקבל על עצמו כלפיך את הוראות מדיניות פרטיות.  </string>
     <string name="title_activity_maps">Map</string>
+    <string name="adress">כתובת: אדר 4, שכונת יב</string>
+    <string name="PhoneNumber">08-677-6090</string>
+    <string name="takingInfo">האיסוף והתשלום יתבצעו בסניף אשדוד</string>
 
 </resources>
