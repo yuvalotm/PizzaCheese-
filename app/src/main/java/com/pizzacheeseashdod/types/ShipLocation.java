@@ -8,6 +8,12 @@ public class ShipLocation {
         this.name = "";
         this.price = 0.0;
     }
+
+    @Override
+    public String toString() {
+        return this.name;
+    }
+
     public ShipLocation(String name, double price){
         this.name = name;
         this.price = price;
@@ -28,4 +34,6 @@ public class ShipLocation {
     public void setPrice(double price) {
         this.price = price;
     }
+
+
 }
