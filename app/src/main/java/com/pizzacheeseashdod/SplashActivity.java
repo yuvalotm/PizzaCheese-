@@ -205,7 +205,6 @@ public class SplashActivity extends AppCompatActivity {
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 productArrayList.clear();
                 maxValue = (int) dataSnapshot.getChildrenCount();
-
                 for (DataSnapshot productSnapshot : dataSnapshot.getChildren()) {
                     Product p;
                     final Product dbProduct = productSnapshot.getValue(Product.class);

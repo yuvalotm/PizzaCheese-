@@ -8,12 +8,20 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:309477772903:android:2cb43886523e9a0a",
+        "mobilesdk_app_id": "1:309477772903:android:f3e7fccf05a89814",
         "android_client_info": {
           "package_name": "com.pizzacheeseashdod"
         }
       },
       "oauth_client": [
+        {
+          "client_id": "309477772903-lgqgp3hl89o66p87t1l4hldl49te033l.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.pizzacheeseashdod",
+            "certificate_hash": "9c21384e3435d980b63801c37717525493172ab6"
+          }
+        },
         {
           "client_id": "309477772903-m9m19fhi0l14ep50sendo7r4tv2bh20r.apps.googleusercontent.com",
           "client_type": 3
@@ -35,8 +43,13 @@
           "status": 1
         },
         "appinvite_service": {
-          "status": 1,
-          "other_platform_oauth_client": []
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "309477772903-m9m19fhi0l14ep50sendo7r4tv2bh20r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         },
         "ads_service": {
           "status": 2
