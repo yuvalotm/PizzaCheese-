@@ -23,8 +23,8 @@
         android:roundIcon="@drawable/home_screen_logo"
         android:supportsRtl="false"
         android:theme="@style/AppTheme"
-        tools:replace=" android:supportsRtl , android:icon "
-        tools:ignore="GoogleAppIndexingWarning">
+        tools:ignore="GoogleAppIndexingWarning"
+        tools:replace=" android:supportsRtl , android:icon ">
         <uses-library android:name="com.google.android.maps" />
 
         <!--
@@ -43,7 +43,7 @@
             android:value="@integer/google_play_services_version" />
 
         <activity
-            android:name="com.pizzacheeseashdod.SplashActivity"
+            android:name=".SplashActivity"
             android:theme="@style/SplashTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -52,52 +52,52 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.pizzacheeseashdod.MainActivity"
+            android:name=".MainActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.pizzacheeseashdod.ChooseType"
+            android:name=".ChooseType"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.pizzacheeseashdod.ChooseProduct"
+            android:name=".ChooseProduct"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.pizzacheeseashdod.ShoppingCart"
+            android:name=".ShoppingCart"
             android:theme="@style/popupTheme" />
         <activity
-            android:name="com.pizzacheeseashdod.TakeForm"
+            android:name=".TakeForm"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.pizzacheeseashdod.ShipForm"
+            android:name=".ShipForm"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.pizzacheeseashdod.EditPizza"
+            android:name=".EditPizza"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.pizzacheeseashdod.CreditCardForm"
+            android:name=".CreditCardForm"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.pizzacheeseashdod.EditToppings"
+            android:name=".EditToppings"
             android:theme="@style/popupTheme" />
         <activity
-            android:name="com.pizzacheeseashdod.EditCartItem"
+            android:name=".EditCartItem"
             android:theme="@style/popupTheme" />
         <activity
-            android:name="com.pizzacheeseashdod.Info"
+            android:name=".Info"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.pizzacheeseashdod.SetProductToppingActivity"
+            android:name=".SetProductToppingActivity"
             android:theme="@style/popupTheme" />
         <activity
-            android:name="com.pizzacheeseashdod.LuckyWheel"
+            android:name=".LuckyWheel"
             android:theme="@style/popupTheme" />
         <activity
-            android:name="com.pizzacheeseashdod.LuckyWheelDetails"
+            android:name=".LuckyWheelDetails"
             android:theme="@style/popupTheme" />
         <activity
-            android:name="com.pizzacheeseashdod.FreeProductsBanner"
+            android:name=".FreeProductsBanner"
             android:theme="@style/popupThemeTransperment" />
         <activity
-            android:name="com.pizzacheeseashdod.MivtzaimBanner"
+            android:name=".MivtzaimBanner"
             android:theme="@style/popupThemeTransperment" />
 
     </application>
