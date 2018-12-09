@@ -22,6 +22,8 @@ import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.AnimationUtils;
+import android.view.animation.LayoutAnimationController;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 
@@ -58,6 +60,9 @@ public class ChooseType extends AppCompatActivity implements View.OnClickListene
 
     FloatingActionButton fabCart;
     RelativeLayout.LayoutParams fabCartParams;
+
+
+    LayoutAnimationController animation;
 
 
     int width;
@@ -188,6 +193,9 @@ public class ChooseType extends AppCompatActivity implements View.OnClickListene
         recyclerView = new RecyclerView(this);
         recyclerView.setId(View.generateViewId());
         recyclerView.setLayoutManager(layoutManager);
+
+        animation = AnimationUtils.loadLayoutAnimation(this, R.anim.layout_animation_fall_down);
+        recyclerView.setLayoutAnimation(animation);
 
         adapter = new ChooseOrderAdapter(width, height, recyclerView);
 

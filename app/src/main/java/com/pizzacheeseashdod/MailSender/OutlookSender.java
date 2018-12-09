@@ -46,7 +46,10 @@ public class OutlookSender {
             message.setFrom(new InternetAddress(from));
 
             // Set To: header field of the header.
-            message.addRecipient(Message.RecipientType.TO, new InternetAddress(receiver));
+            if (receiver.indexOf(',') > 0)
+                message.setRecipients(Message.RecipientType.TO, InternetAddress.parse(receiver));
+            else
+                message.setRecipient(Message.RecipientType.TO, new InternetAddress(receiver));
 
             // Set Subject: header field
             message.setSubject(subject);
