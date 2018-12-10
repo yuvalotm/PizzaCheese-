@@ -6,7 +6,6 @@ import java.util.ArrayList;
  * Created by Tal on 03/10/17.
  */
 
-
 public class AppSettings {
     private double toppingPrice;
     private boolean luckyWheelEnabled;

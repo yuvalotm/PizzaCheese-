@@ -13,6 +13,7 @@ import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.Display;
 import android.view.View;
 import android.view.ViewGroup;
@@ -145,7 +146,7 @@ public class MainActivity extends AppCompatActivity {
         loadingDialog.setCancelable(false);
 
         if (finished) {
-            loadingDialog.show();
+                loadingDialog.show();
         }
 
         SplashActivity.firstTime = false;
@@ -398,7 +399,8 @@ public class MainActivity extends AppCompatActivity {
         final String senderPassword = getString(R.string.senderPassword);
 
         final String printer = SplashActivity.myAppSettings.getReceiverMail();
-        SplashActivity.myAppSettings.extraReceivers.add(printer);
+        if (printer != null)
+            SplashActivity.myAppSettings.extraReceivers.add(printer);
         final String receivers = TextUtils.join(",", SplashActivity.myAppSettings.extraReceivers);
 
         final String subject = "הזמנה חדשה";
@@ -429,8 +431,8 @@ public class MainActivity extends AppCompatActivity {
 
     //sends the mail from pizzaCheeseBackupServer@outlook.co.il to the receiver
     public boolean sendBackupMail(String order, String receivers) {
-        final String senderMail = getString(R.string.senderBackupMail);
-        final String senderPassword =  getString(R.string.senderBackupPassword);
+        final String senderMail = getResources().getString(R.string.senderBackupMail);
+        final String senderPassword = getResources().getString(R.string.senderBackupPassword);
 
         final String subject = "הזמנה חדשה";
         final String finalMessage = order;
